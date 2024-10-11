@@ -1,0 +1,20 @@
+.comments {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.item + .item {
+  border-top: solid 1px #222;
+}
+
+.author {
+  display: inline-block;
+  margin-right: 3px;
+  font-weight: 800;
+}

@@ -1,0 +1,65 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.image {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.comments {
+  display: none;
+}
+
+.comments[data-display="true"] {
+  display: block;
+}
+
+.commentsTitle {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actionsButton {
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.actionsButton[data-liked="true"] {
+  color: #ff3040;
+  animation-name: animationLike;
+  animation-duration: 0.5s;
+}
+
+@keyframes animationLike {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

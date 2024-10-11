@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formTextarea {
+  background: #222;
+  border: #333;
+  border-radius: 4px;
+  color: #999;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  resize: none;
+}
+
+.formTextarea:focus {
+  outline: 2px solid #444;
+  outline-offset: 2px;
+}
+
+.formButton {
+  cursor: pointer;
+  background: #111;
+  border: 0;
+  color: #f5f5f5;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.formButton:hover,
+.formButton:focus {
+  background: #ff3040;
+}
